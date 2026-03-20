@@ -1,0 +1,40 @@
+Field name,Data type,Description,Field type
+DBUID,int64,"Uniquely identifies a dissemination block (composed of the 2-digit province/territory unique identifier followed by the 2-digit census division code, the 4-digit dissemination area code and the 3-digit dissemination block code).",Geographic code
+DBPOP,float64,Dissemination block population.,"Population, 2021"
+DAUID,int64,Uniquely identifies a dissemination area (composed of the 2-digit province/territory unique identifier followed by the 2-digit census division code and the 4-digit dissemination area code).,Geographic code
+DAPOP,float64,Dissemination area population.,"Population, 2021"
+CSDUID,int64,Uniquely identifies a census subdivision (composed of the 2-digit province/territory unique identifier followed by the 2-digit census division code and the 3-digit census subdivision code).,Geographic code
+CSDNAME,object,Census subdivision name.,Geographic name
+CSDTYPE,object,Census subdivisions are classified according to designations adopted by provincial/territorial or federal authorities.,Geographic type
+CSDPOP,float64,Census subdivision population.,"Population, 2021"
+CMAUID,int64,Uniquely identifies a census metropolitan area/census agglomeration.,Geographic code
+CMAPUID,int64,Uniquely identifies the provincial/territorial part of a census metropolitan area/census agglomeration (composed of the 2-digit province/territory unique identifier followed by the 3-digit census metropolitan area/census agglomeration unique identifier).,Geographic code
+CMANAME,object,Census metropolitan area or census agglomeration name.,Geographic name
+CMATYPE,object,"A one-character field identifying whether the unit is a census metropolitan area, a tracted census agglomeration or a nontracted census agglomeration.",Geographic type
+CMAPOP,float64,Census metropolitan area population.,"Population, 2021"
+PRUID,int64,Uniquely identifies a province or territory.,Geographic code
+PRNAME,object,Province or territory name.,Geographic name
+PRPOP,float64,Province or territory population.,"Population, 2021"
+lon,object,Longitude of the dissemination block's representative point (EPSG 4326).,Geographic coordinate
+lat,object,Latitude of the dissemination block's representative point (EPSG 4326).,Geographic coordinate
+in_db_emp,object,Indicates whether at least one source of employment exists within the boundaries of a dissemination block.,Indicator
+prox_idx_emp,object,Normalised value of a dissemination block's proximity to employment.,Proximity index
+in_db_pharma,object,Indicates whether at least one pharmacy or drug store exists within the boundaries of a dissemination block.,Indicator
+prox_idx_pharma,object,Normalised value of a dissemination block's proximity to pharmacy and drug stores.,Proximity index
+in_db_childcare,object,Indicates whether at least one childcare facility exists within the boundaries of a dissemination block.,Indicator
+prox_idx_childcare,object,Normalised value of a dissemination block's proximity to child care facilities.,Proximity index
+in_db_health,object,Indicates whether at least one health facility exists within the boundaries of a dissemination block.,Indicator
+prox_idx_health,object,Normalised value of a dissemination block's proximity to health facilities.,Proximity index
+in_db_grocery,object,Indicates whether at least one grocery store exists within the boundaries of a dissemination block.,Indicator
+prox_idx_grocery,object,Normalised value of a dissemination block's proximity to grocery stores.,Proximity index
+in_db_educpri,object,Indicates whether at least one primary education facility exists within the boundaries of a dissemination block.,Indicator
+prox_idx_educpri,object,Normalised value of a dissemination block's proximity to primary education facilities.,Proximity index
+in_db_educsec,object,Indicates whether at least one secondary education facility exists within the boundaries of a dissemination block.,Indicator
+prox_idx_educsec,object,Normalised value of a dissemination block's proximity to secondary education facilities.,Proximity index
+in_db_lib,object,Indicates whether at least one library exists within the boundaries of a dissemination block.,Indicator
+prox_idx_lib,object,Normalised value of a dissemination block's proximity to libraries.,Proximity index
+in_db_parks,object,Indicates whether at least one park exists within the boundaries of a dissemination block.,Indicator
+prox_idx_parks,object,Normalised value of a dissemination block's proximity to parks.,Proximity index
+in_db_transit,object,Indicates whether at least one transit stop exists within the boundaries of a dissemination block.,Indicator
+prox_idx_transit,object,Normalised value of a dissemination block's proximity to transit trips.,Proximity index
+amenity_dense,object,"Indicates whether a dissemination block is an amenity dense neighbourhood, a high amenity density neighbourhood, or a non-amenity dense neighbourhood.",Indicator
